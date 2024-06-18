@@ -1,17 +1,14 @@
 package org.example.Lesson1
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
-
+const val SEC_IN_MINUTE =60
 fun main(){
-    val sixty = 60
     var sec = 6480
-    var min = sec/sixty
-    var hour = min/sixty
-    val sec_in_space = sec % sixty
-    val min_in_space = min % sixty
+    var min = sec / SEC_IN_MINUTE
+    var hour = min / SEC_IN_MINUTE
+    val sec_in_space = sec % SEC_IN_MINUTE
+    val min_in_space = min % SEC_IN_MINUTE
 
     println(LocalTime.of(hour,min_in_space,sec_in_space).format(DateTimeFormatter.ofPattern("HH:mm:ss")))
-
-
 
 }
