@@ -11,4 +11,6 @@ fun main(){
 
     println(LocalTime.of(hour,min_in_space,sec_in_space).format(DateTimeFormatter.ofPattern("HH:mm:ss")))
 
+
+
 }
